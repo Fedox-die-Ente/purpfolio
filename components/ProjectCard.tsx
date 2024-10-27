@@ -2,6 +2,7 @@ import React from 'react'
 import Button from "@/components/Button";
 import {CodeIcon, EyeIcon} from "lucide-react";
 import Image from "next/image";
+import {MESSAGES} from "@/lib/texts";
 
 interface Props {
 	image: string;
@@ -42,12 +43,14 @@ export default function ProjectCard({
 						<div className={'flex flex-row gap-2 items-center justify-center w-full mt-5'}>
 
 							{view.isAvailable &&
-                                <Button label={'View project'} icon={<EyeIcon size={24} className={'text-white'}/>}
+                                <Button label={MESSAGES.PROJECT_CARD.VIEW_PROJECT}
+                                        icon={<EyeIcon size={24} className={'text-white'}/>}
                                         variant={'primary'}
                                         onClick={() => window.open(view.link)}/>}
 
 							{github.isAvailable &&
-                                <Button label={'Github Repo'} onClick={() => window.open(github.link)}
+                                <Button label={MESSAGES.PROJECT_CARD.GITHUB_REPO}
+                                        onClick={() => window.open(github.link)}
                                         variant={'secondary'}
                                         icon={<CodeIcon size={24} className={'text-white'}/>}/>}
 						</div>
