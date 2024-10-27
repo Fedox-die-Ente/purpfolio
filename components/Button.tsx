@@ -3,9 +3,9 @@ import React from 'react'
 const getVariant = (variant: 'primary' | 'secondary') => {
 	switch (variant) {
 		case 'primary':
-			return 'px-6 py-3 border-2 border-primary/10 bg-primary/50 rounded-md text-white items-center hover:bg-primary/70 transition-all';
+			return 'px-6 py-3 border-2 border-primary/10 bg-primary/50 rounded-md text-white items-center hover:bg-primary/70 transition-all truncate';
 		case 'secondary':
-			return 'px-6 py-3 border-2 border-primary/50 rounded-md text-white items-center hover:bg-primary/50 transition-all';
+			return 'px-6 py-3 border-2 border-primary/50 rounded-md text-white items-center hover:bg-primary/50 transition-all truncate';
 	}
 }
 
