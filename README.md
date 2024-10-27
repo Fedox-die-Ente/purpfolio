@@ -54,6 +54,8 @@ To get the contact form working:
 
 1. Sign up for a [Resend](https://resend.com/) account
 2. Add your Resend API key to `.env.local`: `RESEND_API_KEY=your-api-key`
+3. Add your domain to the Resend dashboard
+4. Update the FROM property in `lib/config.tsx` to your domain
 
 ## 📜 License
 

@@ -15,7 +15,7 @@ export async function sendEmail(formData: FormData) {
 
 	try {
 		const {data, error} = await resend.emails.send({
-			from: 'Acme <onboarding@resend.dev>',
+			from: config.FROM,
 			to: config.CONTACT_EMAIL,
 			subject: 'New message from your website',
 			react: EmailTemplate({name, email, message}),
@@ -26,7 +26,7 @@ export async function sendEmail(formData: FormData) {
 		}
 
 		return {success: true, data};
-	} catch (_) {
+	} catch (e) {
 		return {success: false, error: 'An unexpected error occurred'};
 	}
 }

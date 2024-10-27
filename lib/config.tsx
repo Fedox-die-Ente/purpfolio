@@ -113,5 +113,6 @@ export const config = {
 		"Designed by @ernestechie on Figma",
 	],
 
-	CONTACT_EMAIL: "mrminecrafttv19@gmail.com"
+	CONTACT_EMAIL: "youremail@blablabla.bla",
+	FROM: "Acme <onboarding@resend.dev>",
 };
