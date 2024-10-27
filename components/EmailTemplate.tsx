@@ -1,5 +1,6 @@
 'use server';
 import * as React from 'react';
+import {MESSAGES} from "@/lib/texts";
 
 interface EmailTemplateProps {
 	name: string;
@@ -26,7 +27,7 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = async ({
 			color: "rgba(117, 98, 224, 0.5)",
 			marginBottom: "16px",
 		}}>
-			New Contact Form Submission
+			{MESSAGES.EMAIL_TEMPLATE.NEW_CONTACT_FORM_SUBMISSION}
 		</h1>
 		<div style={{
 			backgroundColor: "#181824",
@@ -40,7 +41,7 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = async ({
 				color: "#7562E0",
 				marginBottom: "12px",
 			}}>
-				From: {name}
+				{MESSAGES.EMAIL_TEMPLATE.FROM}{name}
 			</h2>
 			<h2 style={{
 				fontSize: "1.5rem",
@@ -48,7 +49,7 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = async ({
 				color: "#7562E0",
 				marginBottom: "12px",
 			}}>
-				Email: {email}
+				{MESSAGES.EMAIL_TEMPLATE.EMAIL}{email}
 			</h2>
 			<p style={{
 				fontSize: "1.125rem",
@@ -64,7 +65,7 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = async ({
 			fontSize: "0.875rem",
 			color: "#848191",
 		}}>
-			<p>This message was sent from your portfolio contact form.</p>
+			<p>{MESSAGES.EMAIL_TEMPLATE.THIS_MESSAGE_WAS_SENT_FROM_YOUR_PORTFOLIO_CONTACT_FORM}</p>
 		</div>
 	</div>
 );
