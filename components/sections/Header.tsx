@@ -1,3 +1,4 @@
+'use client';
 import React from 'react'
 import {config} from "@/lib/config"
 import Image from "next/image"
@@ -7,7 +8,7 @@ import {MESSAGES} from "@/lib/texts"
 
 export default function Header() {
 	return (
-		<div className='flex flex-col items-center py-8'>
+		<div id={'header'} className='flex flex-col items-center py-8'>
 			<div
 				className='flex flex-col md:flex-row py-6 md:py-12 gap-8 md:gap-16 lg:gap-36 items-center max-w-screen-xl mx-auto justify-center px-4 md:px-8 mt-5'>
 				<div className='flex flex-col gap-4 md:gap-7 text-white text-center md:text-left'>
@@ -15,8 +16,14 @@ export default function Header() {
 					<p className='text-3xl md:text-[3.25rem] font-semibold'>{config.FULL_NAME}</p>
 					<p className='text-base md:text-[1.125rem] font-medium'>{config.SMALL_BIO}</p>
 					<div className='flex flex-col sm:flex-row gap-4 justify-center md:justify-start'>
-						<Button label={MESSAGES.HEADER.ABOUT_ME} icon={<User2/>}/>
-						<Button label={MESSAGES.HEADER.PROJECTS} variant='secondary' icon={<EyeIcon/>}/>
+						<Button label={MESSAGES.HEADER.ABOUT_ME} icon={<User2/>}
+
+								onClick={() => document.getElementById('about')?.scrollIntoView({behavior: 'smooth'})}
+
+						/>
+						<Button onClick={
+							() => document.getElementById('projects')?.scrollIntoView({behavior: 'smooth'})
+						} label={MESSAGES.HEADER.PROJECTS} variant='secondary' icon={<EyeIcon/>}/>
 					</div>
 				</div>
 

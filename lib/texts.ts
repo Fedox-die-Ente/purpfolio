@@ -2,7 +2,7 @@ export const MESSAGES = {
 	NAVBAR_LINKS: [
 		{
 			name: "Home",
-			href: "#"
+			href: "#header"
 		},
 		{
 			name: "About me",
