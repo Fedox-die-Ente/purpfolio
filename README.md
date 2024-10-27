@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💜 Purpfolio
 
-## Getting Started
+Welcome to Purpfolio - A sleek, purple-themed portfolio template for developers and designers!
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 🎨 Fully customizable through `lib/config.tsx`
+- 💬 Easy text management with `lib/texts.ts`
+- 📱 Responsive design for all devices
+- 🌙 Dark mode by default (because we're cool like that)
+- 📧 Integrated contact form using Resend
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Built With
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [Next.js](https://nextjs.org/) - React framework for production
+- [TypeScript](https://www.typescriptlang.org/) - Static type checking
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Figma](https://www.figma.com/) - Design tool
+- [Resend](https://resend.com/) - Email sending library
+- [Lucide React](https://lucide.dev/) - Beautiful & consistent icons
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎨 Design
 
-## Learn More
+Check out the Figma design [here](https://www.figma.com/community/file/1084469493663635659). Huge thanks to the amazing
+designer!
 
-To learn more about Next.js, take a look at the following resources:
+## 📸 Live Preview
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+See the live preview [here](https://purpfolio.vercel.app/).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Getting Started
 
-## Deploy on Vercel
+1. Clone the repository with `git clone https://github.com/Fedox-die-Ente/purpfolio.git`
+2. Install dependencies with `yarn install` or `npm install`
+3. Configure your portfolio in `config.tsx`
+4. Customize messages in `texts.ts`
+5. Start the development server with `yarn dev` or `npm run dev`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 Configuration
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+All major configurations can be done in `config.tsx`. This includes:
+
+- Personal information
+- Skills
+- Projects
+- Services
+- Social links
+
+For text customization, head to `texts.ts`.
+
+## 📧 Contact Form
+
+To get the contact form working:
+
+1. Sign up for a [Resend](https://resend.com/) account
+2. Add your Resend API key to `.env.local`: `RESEND_API_KEY=your-api-key`
+
+## 📜 License
+
+This project is free to use for personal and commercial purposes. However, you must keep the credits in the footer
+intact.
+
+See [LICENSE](LICENSE) for more information.
+
+## 🙏 Credits
+
+- Design by [ernestechie](https://www.figma.com/@ernestechie)
+- Developed by [Fedox-die-Ente](https://github.com/Fedox-die-Ente)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to
+check [issues page](https://github.com/Fedox-die-Ente/purpfolio/issues).
+
+## 💖 Show your support
+
+Give a ⭐️ if you like this project!
+
+---
+
+Made with 💜 and React
